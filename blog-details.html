@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Starter Page - Scout Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Scout
+  * Template URL: https://bootstrapmade.com/scout-bootstrap-multipurpose-template/
+  * Updated: May 05 2025 with Bootstrap v5.3.5
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Logo Sekolah -->
+        <img src="assets/img/logo.webp" alt="PixxelPro">
+        <!-- <h1 class="sitename">PixxelPro</h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <!-- 1. Home -> index.html -->
+          <li><a href="index.html" class="active">Beranda</a></li>
+
+          <!-- 2. About -> about.html -->
+          <li><a href="about.html">Tentang Kami</a></li>
+
+          <!-- 3. Services (Jurusan) -> Dropdown ke file jurusan-*.html -->
+          <li class="dropdown"><a href="lihat-semua-jurusan.html"><span>Jurusan</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <!-- Jurusan Teknologi -->
+              <li><a href="jurusan-rpl.html">RPL (Rekayasa Perangkat Lunak)</a></li>
+              <li><a href="jurusan-tkj.html">TKJ (Teknik Komputer Jaringan)</a></li>
+              <li><a href="jurusan-dkv.html">DKV (Desain Komunikasi Visual)</a></li>
+
+              <!-- Jurusan Teknik -->
+              <li><a href="jurusan-tkr.html">TKR (Teknik Kendaraan Ringan)</a></li>
+              <li><a href="jurusan-tpm.html">TPM (Teknik Pemesinan)</a></li>
+              <li><a href="jurusan-tbsm.html">TBSM (Teknik Bisnis Sepeda Motor)</a></li>
+
+              <!-- Link ke halaman semua jurusan -->
+              <li><a href="lihat-semua-jurusan.html" style="font-weight:bold; color:var(--accent-color);">Lihat
+                  SemuaJurusan</a></li>
+            </ul>
+          </li>
+
+          <!-- 4. Team -> guru-lengkap.html -->
+          <li><a href="guru-lengkap.html">Guru & Staf</a></li>
+
+          <!-- 5. PPDB -> ppdb.html -->
+          <li><a href="ppdb.html">Info PPDB</a></li>
+
+          <!-- 6. Contact -> index.html#contact (Bagian paling bawah home) -->
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- Tombol Merah di Kanan -> form-ppdb.html -->
+      <a class="btn-getstarted" href="form-ppdb.html">Daftar Sekarang</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Blog details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Beranda</a></li>
+            <li class="current">Blog details</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Post Details 3 Section -->
+    <section id="post-details-3" class="post-details-3 section">
+      <div class="container" data-aos="fade-up">
+
+        <article class="article">
+          <div class="article-header">
+            <div class="meta-categories" data-aos="fade-up">
+              <a href="#" class="category">Edukasi</a>
+              <a href="#" class="category">Kurikulum</a>
+              <a href="#" class="category">Inovasi Belajar</a>
+            </div>
+
+            <h1 class="title" data-aos="fade-up" data-aos-delay="100">Penerapan Kurikulum Merdeka di Sekolah:
+              Membangun Generasi Unggul & Kreatif</h1>
+
+            <div class="article-meta" data-aos="fade-up" data-aos-delay="200">
+              <div class="author">
+                <img src="assets/img/about/kepala-sekolah.webp" alt="Author" class="author-img">
+                <div class="author-info">
+                  <h4>Drs. Budi Santoso, M.Pd.</h4>
+                  <span>Kepala Sekolah / Praktisi Pendidikan</span>
+                </div>
+              </div>
+              <div class="post-info">
+                <span><i class="bi bi-calendar4-week"></i> 20 Desember 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-featured-image" data-aos="zoom-in">
+            <!-- Pastikan ganti gambar ini dengan foto kegiatan belajar -->
+            <img src="assets/img/blog/blog-school-1.webp" alt="Kegiatan Belajar Kurikulum Merdeka" class="img-fluid">
+          </div>
+
+          <div class="article-wrapper">
+            <aside class="table-of-contents" data-aos="fade-left">
+              <h3>Daftar Isi</h3>
+              <nav>
+                <ul>
+                  <li><a href="#pengertian" class="active">Pengertian & Konsep Dasar</a></li>
+                  <li><a href="#karakteristik">Karakteristik Utama</a></li>
+                  <li><a href="#profil-pelajar">Profil Pelajar Pancasila (P5)</a></li>
+                  <li><a href="#manfaat">Manfaat Bagi Siswa</a></li>
+                  <li><a href="#faq">Pertanyaan Umum (FAQ)</a></li>
+                </ul>
+              </nav>
+            </aside>
+            <div class="article-content">
+
+              <div class="content-section" id="pengertian" data-aos="fade-up">
+                <p class="lead">
+                  Dunia pendidikan terus berkembang. Untuk menjawab tantangan zaman dan memulihkan pembelajaran pasca
+                  pandemi, sekolah kami kini menerapkan <b>Kurikulum Merdeka</b>. Apa sebenarnya esensi dari kurikulum
+                  ini dan bagaimana dampaknya bagi putra-putri Anda?
+                </p>
+                <p>
+                  Kurikulum Merdeka adalah kurikulum dengan pembelajaran intrakurikuler yang beragam di mana konten akan
+                  lebih optimal agar peserta didik memiliki cukup waktu untuk mendalami konsep dan menguatkan
+                  kompetensi. Guru memiliki keleluasaan untuk memilih berbagai perangkat ajar sehingga pembelajaran
+                  dapat disesuaikan dengan kebutuhan belajar dan minat peserta didik.
+                </p>
+
+                <div class="highlight-quote">
+                  <p>
+                    <i>"Anak-anak hidup dan tumbuh sesuai kodratnya sendiri. Pendidik hanya dapat merawat dan menuntun
+                      tumbuhnya kodrat itu."</i> <br><b>(Ki Hajar Dewantara)</b>
+                  </p>
+                </div>
+
+                <h3>Tujuan Penerapan</h3>
+                <p>
+                  Tujuan utama dari kurikulum ini adalah menciptakan pendidikan yang menyenangkan, mengejar
+                  ketertinggalan
+                  pembelajaran (learning loss), dan mengembangkan potensi peserta didik sesuai dengan bakat dan minatnya
+                  masing-masing tanpa tekanan akademis yang berlebihan.
+                </p>
+              </div>
+
+              <div class="content-section" id="karakteristik" data-aos="fade-up">
+                <h2>Karakteristik Utama Kurikulum Merdeka</h2>
+                <p>
+                  Ada tiga karakteristik utama yang membedakan kurikulum ini dengan kurikulum sebelumnya (K-13), yang
+                  membuat proses belajar menjadi lebih fleksibel dan mendalam.
+                </p>
+
+                <div class="feature-points">
+                  <div class="point">
+                    <i class="bi bi-book"></i>
+                    <div>
+                      <h4>Fokus pada Materi Esensial</h4>
+                      <p>Pembelajaran lebih mendalam, tidak terburu-buru, dan fokus pada materi yang paling penting
+                        (esensial) untuk pengembangan kompetensi dasar.</p>
+                    </div>
+                  </div>
+                  <div class="point">
+                    <i class="bi bi-person-workspace"></i>
+                    <div>
+                      <h4>Pembelajaran Berbasis Projek</h4>
+                      <p>Pengembangan soft skills dan karakter melalui projek penguatan profil pelajar Pancasila (P5)
+                        untuk memecahkan isu nyata.</p>
+                    </div>
+                  </div>
+                  <div class="point">
+                    <i class="bi bi-sliders"></i>
+                    <div>
+                      <h4>Fleksibilitas Guru</h4>
+                      <p>Guru dapat melakukan pembelajaran yang terdiferensiasi sesuai dengan kemampuan peserta didik
+                        (Teach at the right level).</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content-section" id="profil-pelajar" data-aos="fade-up">
+                <h2>Projek Penguatan Profil Pelajar Pancasila (P5)</h2>
+                <p>
+                  Salah satu inovasi terbesar dalam kurikulum ini adalah P5. Ini adalah kegiatan kokurikuler berbasis
+                  projek yang dirancang untuk menguatkan upaya pencapaian kompetensi dan karakter sesuai dengan profil
+                  pelajar Pancasila.
+                </p>
+
+                <h3>6 Dimensi Profil Pelajar Pancasila</h3>
+                <ul>
+                  <li><b>Beriman, Bertakwa, & Berakhlak Mulia:</b> Memiliki spiritualitas dan moral yang baik.</li>
+                  <li><b>Berkebinekaan Global:</b> Menghargai budaya luhur namun tetap terbuka pada budaya dunia.</li>
+                  <li><b>Bergotong Royong:</b> Mampu bekerja sama dan peduli terhadap sesama.</li>
+                  <li><b>Mandiri:</b> Bertanggung jawab atas proses dan hasil belajarnya.</li>
+                  <li><b>Bernalar Kritis:</b> Mampu memproses informasi dan mengambil keputusan.</li>
+                  <li><b>Kreatif:</b> Menghasilkan gagasan dan karya yang orisinal.</li>
+                </ul>
+              </div>
+
+              <div class="content-section" id="manfaat" data-aos="fade-up">
+                <h2>Manfaat Penerapan di Sekolah</h2>
+                <p>
+                  Transformasi ini membawa dampak positif yang signifikan bagi ekosistem sekolah, terutama bagi
+                  pengalaman belajar siswa sehari-hari.
+                </p>
+
+                <div class="key-principles">
+                  <div class="principle">
+                    <span class="number">01</span>
+                    <h4>Belajar Lebih Relevan</h4>
+                    <p>Siswa belajar melalui projek yang berkaitan dengan isu-isu aktual (lingkungan, kesehatan, dll),
+                      sehingga ilmu lebih aplikatif.</p>
+                  </div>
+                  <div class="principle">
+                    <span class="number">02</span>
+                    <h4>Tidak Ada Penjurusan Kaku</h4>
+                    <p>Di jenjang SMA, tidak ada lagi sekat IPA/IPS/Bahasa. Siswa bebas memilih mata pelajaran sesuai
+                      minat dan rencana karirnya.</p>
+                  </div>
+                  <div class="principle">
+                    <span class="number">03</span>
+                    <h4>Pengembangan Karakter</h4>
+                    <p>Fokus tidak hanya pada nilai akademis (kognitif), tetapi juga pada pembentukan karakter dan
+                      keterampilan sosial.</p>
+                  </div>
+                  <div class="principle">
+                    <span class="number">04</span>
+                    <h4>Guru Lebih Merdeka</h4>
+                    <p>Guru bebas berinovasi dalam metode pengajaran tanpa terbelenggu administrasi yang rumit dan kaku.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content-section" id="kesimpulan" data-aos="fade-up">
+                <h2>Peran Orang Tua</h2>
+                <p>
+                  Keberhasilan Kurikulum Merdeka sangat membutuhkan kolaborasi orang tua. Ayah Bunda diharapkan dapat:
+                </p>
+                <ul>
+                  <li>Menjadi teman diskusi anak dalam memilih minat belajarnya.</li>
+                  <li>Memantau perkembangan karakter anak, bukan hanya nilai rapornya.</li>
+                  <li>Aktif berkomunikasi dengan wali kelas terkait perkembangan anak.</li>
+                </ul>
+              </div>
+
+              <div class="content-section" id="faq" data-aos="fade-up">
+                <h2>Pertanyaan Umum (FAQ)</h2>
+                <p>Berikut adalah pertanyaan yang sering diajukan wali murid terkait kurikulum baru ini.</p>
+
+                <h3>1. Apakah buku pelajarannya berubah?</h3>
+                <p>Ya, buku teks disesuaikan dengan materi esensial Kurikulum Merdeka. Namun, sumber belajar kini lebih
+                  luas, bisa dari internet, lingkungan sekitar, dan platform digital.</p>
+
+                <h3>2. Bagaimana sistem penilaian/rapornya?</h3>
+                <p>Rapor tidak hanya berisi angka, tetapi juga deskripsi kualitatif tentang capaian kompetensi siswa.
+                  Ada
+                  juga rapor khusus untuk Projek P5.</p>
+
+                <h3>3. Apakah Kurikulum Merdeka lebih sulit?</h3>
+                <p>Justru kurikulum ini dirancang untuk lebih sederhana dan mendalam. Siswa tidak dipaksa menguasai
+                  semua materi secara cepat, melainkan memahami konsep dasarnya dengan kuat.</p>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section><!-- End Post Details 3 Section -->
+
+    <!-- Cards 16 Section (Artikel Terkait) -->
+    <section id="cards-16" class="cards-16 section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Artikel Terkait</h2>
+        <p>Baca juga informasi menarik lainnya seputar kegiatan dan prestasi sekolah.</p>
+      </div>
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/blog/blog-school-2.webp" alt="Teaching Factory" class="img-fluid">
+              </div>
+              <h3><a href="blog-details.html" class="stretched-link">Teaching Factory: Belajar Rasa Industri</a>
+              </h3>
+              <p>Mengenal model pembelajaran berbasis produksi/jasa yang mengacu pada standar dan prosedur industri
+                dunia kerja.</p>
+              <div class="read-more">
+                <span>Baca selengkapnya <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/blog/blog-school-4.webp" alt="Prestasi Siswa" class="img-fluid">
+              </div>
+              <h3><a href="blog-details.html" class="stretched-link">Siswa Kami Juara 1 LKS Tingkat Provinsi</a>
+              </h3>
+              <p>Selamat kepada tim perwakilan sekolah yang berhasil menyabet medali emas dalam Lomba Kompetensi Siswa
+                tahun ini.</p>
+              <div class="read-more">
+                <span>Baca selengkapnya <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/blog/blog-school-6.webp" alt="Literasi Digital" class="img-fluid">
+              </div>
+              <h3><a href="blog-details.html" class="stretched-link">Membangun Budaya Literasi Digital</a>
+              </h3>
+              <p>Program sekolah untuk meningkatkan kemampuan siswa dalam memahami dan menggunakan teknologi informasi
+                secara bijak.</p>
+              <div class="read-more">
+                <span>Baca selengkapnya <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Cards 16 Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+        <!-- KOLOM 1: IDENTITAS SEKOLAH -->
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">PixxelPro</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Jl. Pendidikan No. 123</p>
+            <p>Kota Harapan, Indonesia 40123</p>
+            <p class="mt-3"><strong>WhatsApp:</strong> <span>+62 895 6390 68080</span></p>
+            <p><strong>Email:</strong> <span>info@pixxelpro.sch.id</span></p>
+          </div>
+        </div>
+
+        <!-- KOLOM 2: TAUTAN CEPAT -->
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Tautan Cepat</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="guru-lengkap.html">Guru & Staf</a></li>
+            <li><a href="ppdb.html">Info PPDB</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+          </ul>
+        </div>
+
+        <!-- KOLOM 3: JURUSAN POPULER -->
+        <div class="col-lg-4 col-md-6 footer-links">
+          <h4>Jurusan Unggulan</h4>
+          <ul>
+            <li><a href="jurusan-rpl.html">Rekayasa Perangkat Lunak (RPL)</a></li>
+            <li><a href="jurusan-tkj.html">Teknik Komputer Jaringan (TKJ)</a></li>
+            <li><a href="jurusan-dkv.html">Desain Komunikasi Visual (DKV)</a></li>
+            <li><a href="jurusan-tkr.html">Teknik Kendaraan Ringan (TKR)</a></li>
+            <li><a href="lihat-semua-jurusan.html">Lihat Semua Jurusan...</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">PixxelPro</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- Tetap biarkan credit ini jika menggunakan versi gratis BootstrapMade -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

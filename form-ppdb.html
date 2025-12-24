@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Starter Page - Scout Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Scout
+  * Template URL: https://bootstrapmade.com/scout-bootstrap-multipurpose-template/
+  * Updated: May 05 2025 with Bootstrap v5.3.5
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Logo Sekolah -->
+        <img src="assets/img/logo.webp" alt="PixxelPro">
+        <!-- <h1 class="sitename">PixxelPro</h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <!-- 1. Home -> index.html -->
+          <li><a href="index.html" class="active">Beranda</a></li>
+
+          <!-- 2. About -> about.html -->
+          <li><a href="about.html">Tentang Kami</a></li>
+
+          <!-- 3. Services (Jurusan) -> Dropdown ke file jurusan-*.html -->
+          <li class="dropdown"><a href="lihat-semua-jurusan.html"><span>Jurusan</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <!-- Jurusan Teknologi -->
+              <li><a href="jurusan-rpl.html">RPL (Rekayasa Perangkat Lunak)</a></li>
+              <li><a href="jurusan-tkj.html">TKJ (Teknik Komputer Jaringan)</a></li>
+              <li><a href="jurusan-dkv.html">DKV (Desain Komunikasi Visual)</a></li>
+
+              <!-- Jurusan Teknik -->
+              <li><a href="jurusan-tkr.html">TKR (Teknik Kendaraan Ringan)</a></li>
+              <li><a href="jurusan-tpm.html">TPM (Teknik Pemesinan)</a></li>
+              <li><a href="jurusan-tbsm.html">TBSM (Teknik Bisnis Sepeda Motor)</a></li>
+
+              <!-- Link ke halaman semua jurusan -->
+              <li><a href="lihat-semua-jurusan.html" style="font-weight:bold; color:var(--accent-color);">Lihat
+                  SemuaJurusan</a></li>
+            </ul>
+          </li>
+
+          <!-- 4. Team -> guru-lengkap.html -->
+          <li><a href="guru-lengkap.html">Guru & Staf</a></li>
+
+          <!-- 5. PPDB -> ppdb.html -->
+          <li><a href="ppdb.html">Info PPDB</a></li>
+
+          <!-- 6. Contact -> index.html#contact (Bagian paling bawah home) -->
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- Tombol Merah di Kanan -> form-ppdb.html -->
+      <a class="btn-getstarted" href="form-ppdb.html">Daftar Sekarang</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Formulir Pendaftaran</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="ppdb.html">Info PPDB</a></li>
+            <li class="current">Formulir</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <section id="form-ppdb" class="section">
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+
+            <div class="form-box" data-aos="fade-up">
+              <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark">Isi Data Diri Calon Siswa</h2>
+                <p class="text-muted">Data akan dikirimkan langsung ke WhatsApp Admin PPDB. Mohon isi dengan benar.</p>
+              </div>
+
+              <!-- Perubahan: Action dihapus, diganti onsubmit ke JavaScript -->
+              <form onsubmit="kirimKeWhatsapp(event)">
+
+                <!-- BAGIAN 1: DATA SISWA -->
+                <h5 class="mb-3 pb-2 border-bottom text-primary"><i class="bi bi-person-circle me-2"></i>A. Data Calon
+                  Siswa</h5>
+
+                <div class="row g-3 mb-4">
+                  <div class="col-md-6">
+                    <label for="namaLengkap" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="namaLengkap" placeholder="Sesuai Ijazah/Akte" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="nisn" class="form-label">NISN</label>
+                    <input type="number" class="form-control" id="nisn" placeholder="Nomor Induk Siswa Nasional"
+                      required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="tempatLahir" class="form-label">Tempat Lahir</label>
+                    <input type="text" class="form-control" id="tempatLahir" placeholder="Kota Kelahiran" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="tanggalLahir" class="form-label">Tanggal Lahir</label>
+                    <input type="date" class="form-control" id="tanggalLahir" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
+                    <select class="form-select" id="jenisKelamin" required>
+                      <option selected disabled value="">Pilih...</option>
+                      <option value="Laki-laki">Laki-laki</option>
+                      <option value="Perempuan">Perempuan</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="agama" class="form-label">Agama</label>
+                    <select class="form-select" id="agama" required>
+                      <option selected disabled value="">Pilih...</option>
+                      <option value="Islam">Islam</option>
+                      <option value="Kristen">Kristen</option>
+                      <option value="Katolik">Katolik</option>
+                      <option value="Hindu">Hindu</option>
+                      <option value="Buddha">Buddha</option>
+                      <option value="Konghucu">Konghucu</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="alamat" class="form-label">Alamat Lengkap</label>
+                    <textarea class="form-control" id="alamat" rows="3"
+                      placeholder="Nama Jalan, RT/RW, Kelurahan, Kecamatan" required></textarea>
+                  </div>
+                </div>
+
+                <!-- BAGIAN 2: PILIHAN JURUSAN (SUDAH DIPERLENGKAP) -->
+                <h5 class="mb-3 pb-2 border-bottom text-primary mt-5"><i class="bi bi-mortarboard-fill me-2"></i>B.
+                  Pilihan Jurusan & Sekolah Asal</h5>
+
+                <div class="row g-3 mb-4">
+                  <div class="col-md-6">
+                    <label for="sekolahAsal" class="form-label">Asal Sekolah (SMP/MTs)</label>
+                    <input type="text" class="form-control" id="sekolahAsal" placeholder="Nama Sekolah Asal" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="tahunLulus" class="form-label">Tahun Lulus</label>
+                    <input type="number" class="form-control" id="tahunLulus" placeholder="Contoh: 2025" required>
+                  </div>
+                  <div class="col-12">
+                    <label for="pilihanJurusan" class="form-label">Pilih Jurusan Diminati</label>
+                    <select class="form-select" id="pilihanJurusan" required>
+                      <option selected disabled value="">Pilih Jurusan...</option>
+                      <!-- Teknologi -->
+                      <option value="RPL">Rekayasa Perangkat Lunak (RPL)</option>
+                      <option value="TKJ">Teknik Komputer & Jaringan (TKJ)</option>
+                      <option value="DKV">Desain Komunikasi Visual (DKV)</option>
+                      <!-- Teknik -->
+                      <option value="TKR">Teknik Kendaraan Ringan (TKR)</option>
+                      <option value="TPM">Teknik Pemesinan (TPM)</option>
+                      <option value="TBSM">Teknik Bisnis Sepeda Motor (TBSM)</option>
+                      <!-- Bisnis -->
+                      <option value="OTKP">Otomatisasi Tata Kelola Perkantoran (OTKP)</option>
+                      <option value="AKL">Akuntansi & Keuangan Lembaga (AKL)</option>
+                      <option value="BDP">Bisnis Daring & Pemasaran (BDP)</option>
+                      <!-- Seni & Pariwisata -->
+                      <option value="TB">Tata Busana (TB)</option>
+                      <option value="PH">Perhotelan (PH)</option>
+                      <!-- Pertanian -->
+                      <option value="APHP">Agribisnis Pengolahan (APHP)</option>
+                    </select>
+                    <div class="form-text">Pastikan pilihan jurusan sesuai dengan minat dan bakat kamu.</div>
+                  </div>
+                </div>
+
+                <!-- BAGIAN 3: DATA ORANG TUA -->
+                <h5 class="mb-3 pb-2 border-bottom text-primary mt-5"><i class="bi bi-people-fill me-2"></i>C. Data
+                  Orang Tua / Wali</h5>
+
+                <div class="row g-3 mb-4">
+                  <div class="col-md-6">
+                    <label for="namaAyah" class="form-label">Nama Ayah</label>
+                    <input type="text" class="form-control" id="namaAyah" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="pekerjaanAyah" class="form-label">Pekerjaan Ayah</label>
+                    <input type="text" class="form-control" id="pekerjaanAyah">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="namaIbu" class="form-label">Nama Ibu</label>
+                    <input type="text" class="form-control" id="namaIbu" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="noHpOrtu" class="form-label">No. WhatsApp Orang Tua</label>
+                    <input type="tel" class="form-control" id="noHpOrtu" placeholder="08xxxxxxxxxx" required>
+                  </div>
+                </div>
+
+                <!-- BAGIAN 4: INFO BERKAS (Hanya Info karena WA tidak bisa auto-upload) -->
+                <h5 class="mb-3 pb-2 border-bottom text-primary mt-5"><i class="bi bi-cloud-arrow-up-fill me-2"></i>D.
+                  Upload Berkas</h5>
+                <div class="alert alert-warning" role="alert">
+                  <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                  <strong>Penting:</strong> Karena pendaftaran via WhatsApp, mohon siapkan foto berkas berikut untuk
+                  dikirimkan secara manual di chat WhatsApp setelah tombol kirim ditekan:
+                  <ul class="mb-0 mt-2">
+                    <li>Pas Foto (3x4)</li>
+                    <li>Scan/Foto Kartu Keluarga (KK)</li>
+                    <li>Scan/Foto Rapor Semester Terakhir</li>
+                  </ul>
+                </div>
+
+                <!-- TOMBOL SUBMIT -->
+                <div class="d-grid gap-2">
+                  <button class="btn btn-submit-form py-3" type="submit">
+                    <i class="bi bi-whatsapp me-2"></i>Kirim Data ke WhatsApp
+                  </button>
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ... (Footer dan kode lainnya) ... -->
+
+    <!-- TAMBAHKAN SCRIPT INI DI BAGIAN PALING BAWAH SEBELUM </body> -->
+    <script>
+      function kirimKeWhatsapp(e) {
+        e.preventDefault(); // Mencegah reload halaman
+
+        // 1. Ambil Nilai dari Form
+        const nama = document.getElementById('namaLengkap').value;
+        const nisn = document.getElementById('nisn').value;
+        const tempatLahir = document.getElementById('tempatLahir').value;
+        const tanggalLahir = document.getElementById('tanggalLahir').value;
+        const jk = document.getElementById('jenisKelamin').value;
+        const agama = document.getElementById('agama').value;
+        const alamat = document.getElementById('alamat').value;
+
+        const sekolahAsal = document.getElementById('sekolahAsal').value;
+        const tahunLulus = document.getElementById('tahunLulus').value;
+        const jurusan = document.getElementById('pilihanJurusan').value;
+
+        const namaAyah = document.getElementById('namaAyah').value;
+        const pekerjaanAyah = document.getElementById('pekerjaanAyah').value;
+        const namaIbu = document.getElementById('namaIbu').value;
+        const noHpOrtu = document.getElementById('noHpOrtu').value;
+
+        // 2. Format Pesan WhatsApp
+        // Menggunakan %0A untuk baris baru (Enter)
+        const pesan = `*FORMULIR PENDAFTARAN PPDB ONLINE*%0A` +
+          `----------------------------------%0A` +
+          `*A. DATA CALON SISWA*%0A` +
+          `Nama: ${nama}%0A` +
+          `NISN: ${nisn}%0A` +
+          `TTL: ${tempatLahir}, ${tanggalLahir}%0A` +
+          `Jenis Kelamin: ${jk}%0A` +
+          `Agama: ${agama}%0A` +
+          `Alamat: ${alamat}%0A%0A` +
+
+          `*B. SEKOLAH & JURUSAN*%0A` +
+          `Asal Sekolah: ${sekolahAsal}%0A` +
+          `Tahun Lulus: ${tahunLulus}%0A` +
+          `Jurusan Diminati: ${jurusan}%0A%0A` +
+
+          `*C. DATA ORANG TUA*%0A` +
+          `Ayah: ${namaAyah} (${pekerjaanAyah})%0A` +
+          `Ibu: ${namaIbu}%0A` +
+          `No. HP Ortu: ${noHpOrtu}%0A%0A` +
+
+          `----------------------------------%0A` +
+          `_Mohon bantuannya untuk proses verifikasi selanjutnya. Berkas foto/scan akan saya lampirkan setelah pesan ini._`;
+
+        // 3. Arahkan ke WhatsApp
+        const nomorTujuan = "62895639068080"; // Tanpa tanda +
+        const urlWA = `https://wa.me/${nomorTujuan}?text=${pesan}`;
+
+        // Buka di tab baru
+        window.open(urlWA, '_blank');
+      }
+    </script>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+        <!-- KOLOM 1: IDENTITAS SEKOLAH -->
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">PixxelPro</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Jl. Pendidikan No. 123</p>
+            <p>Kota Harapan, Indonesia 40123</p>
+            <p class="mt-3"><strong>WhatsApp:</strong> <span>+62 895 6390 68080</span></p>
+            <p><strong>Email:</strong> <span>info@pixxelpro.sch.id</span></p>
+          </div>
+        </div>
+
+        <!-- KOLOM 2: TAUTAN CEPAT -->
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Tautan Cepat</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="guru-lengkap.html">Guru & Staf</a></li>
+            <li><a href="ppdb.html">Info PPDB</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+          </ul>
+        </div>
+
+        <!-- KOLOM 3: JURUSAN POPULER -->
+        <div class="col-lg-4 col-md-6 footer-links">
+          <h4>Jurusan Unggulan</h4>
+          <ul>
+            <li><a href="jurusan-rpl.html">Rekayasa Perangkat Lunak (RPL)</a></li>
+            <li><a href="jurusan-tkj.html">Teknik Komputer Jaringan (TKJ)</a></li>
+            <li><a href="jurusan-dkv.html">Desain Komunikasi Visual (DKV)</a></li>
+            <li><a href="jurusan-tkr.html">Teknik Kendaraan Ringan (TKR)</a></li>
+            <li><a href="lihat-semua-jurusan.html">Lihat Semua Jurusan...</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">PixxelPro</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- Tetap biarkan credit ini jika menggunakan versi gratis BootstrapMade -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

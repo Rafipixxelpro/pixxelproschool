@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Starter Page - Scout Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Scout
+  * Template URL: https://bootstrapmade.com/scout-bootstrap-multipurpose-template/
+  * Updated: May 05 2025 with Bootstrap v5.3.5
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Logo Sekolah -->
+        <img src="assets/img/logo.webp" alt="PixxelPro">
+        <!-- <h1 class="sitename">PixxelPro</h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <!-- 1. Home -> index.html -->
+          <li><a href="index.html" class="active">Beranda</a></li>
+
+          <!-- 2. About -> about.html -->
+          <li><a href="about.html">Tentang Kami</a></li>
+
+          <!-- 3. Services (Jurusan) -> Dropdown ke file jurusan-*.html -->
+          <li class="dropdown"><a href="lihat-semua-jurusan.html"><span>Jurusan</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <!-- Jurusan Teknologi -->
+              <li><a href="jurusan-rpl.html">RPL (Rekayasa Perangkat Lunak)</a></li>
+              <li><a href="jurusan-tkj.html">TKJ (Teknik Komputer Jaringan)</a></li>
+              <li><a href="jurusan-dkv.html">DKV (Desain Komunikasi Visual)</a></li>
+
+              <!-- Jurusan Teknik -->
+              <li><a href="jurusan-tkr.html">TKR (Teknik Kendaraan Ringan)</a></li>
+              <li><a href="jurusan-tpm.html">TPM (Teknik Pemesinan)</a></li>
+              <li><a href="jurusan-tbsm.html">TBSM (Teknik Bisnis Sepeda Motor)</a></li>
+
+              <!-- Link ke halaman semua jurusan -->
+              <li><a href="lihat-semua-jurusan.html" style="font-weight:bold; color:var(--accent-color);">Lihat
+                  SemuaJurusan</a></li>
+            </ul>
+          </li>
+
+          <!-- 4. Team -> guru-lengkap.html -->
+          <li><a href="guru-lengkap.html">Guru & Staf</a></li>
+
+          <!-- 5. PPDB -> ppdb.html -->
+          <li><a href="ppdb.html">Info PPDB</a></li>
+
+          <!-- 6. Contact -> index.html#contact (Bagian paling bawah home) -->
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- Tombol Merah di Kanan -> form-ppdb.html -->
+      <a class="btn-getstarted" href="form-ppdb.html">Daftar Sekarang</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Informasi PPDB</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Beranda</a></li>
+            <li class="current">Info Pendaftaran</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hero Slider Section -->
+    <section id="hero-slider" class="hero-slider section p-0 dark-background">
+
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <!-- Indikator (Titik-titik di bawah) -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Wrapper Gambar & Konten -->
+        <div class="carousel-inner">
+
+          <!-- Slide 1: Sambutan / Gedung Sekolah -->
+          <div class="carousel-item active">
+            <!-- Ganti gambar di bawah ini -->
+            <img src="assets/img/hero-bg.webp" class="d-block w-100 hero-img" alt="Gedung Sekolah">
+            <div class="carousel-overlay"></div> <!-- Lapisan Gelap -->
+            <div class="container h-100">
+              <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                  <h2 class="hero-title">Selamat Datang di <span class="highlight">PixxelPro</span></h2>
+                  <p class="hero-desc">Sekolah Pusat Keunggulan yang mencetak generasi digital, kreatif, dan berkarakter
+                    siap kerja.</p>
+                  <div class="d-flex justify-content-center gap-3">
+                    <a href="about.html" class="btn-get-started">Tentang Kami</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: Info PPDB -->
+          <div class="carousel-item">
+            <!-- Ganti gambar di bawah ini -->
+            <img src="assets/img/hero-ppdb.webp" class="d-block w-100 hero-img" alt="PPDB Sekolah">
+            <div class="carousel-overlay"></div>
+            <div class="container h-100">
+              <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8">
+                  <h2 class="hero-title">Penerimaan Peserta Didik Baru</h2>
+                  <p class="hero-desc">Bergabunglah bersama kami! Pendaftaran Gelombang 1 Tahun Ajaran 2025/2026 telah
+                    dibuka.</p>
+                  <div class="d-flex justify-content-center gap-3">
+                    <a href="ppdb.html#info-ppdb" class="btn-get-started">Info Pendaftaran</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Prestasi / Kegiatan -->
+          <div class="carousel-item">
+            <!-- Ganti gambar di bawah ini -->
+            <img src="assets/img/hero-activity.webp" class="d-block w-100 hero-img" alt="Kegiatan Siswa">
+            <div class="carousel-overlay"></div>
+            <div class="container h-100">
+              <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8">
+                  <h2 class="hero-title">Berprestasi & Berkompetensi</h2>
+                  <p class="hero-desc">Fasilitas lengkap dan kurikulum standar industri untuk menunjang bakat dan minat
+                    siswa.</p>
+                  <div class="d-flex justify-content-center gap-3">
+                    <a href="lihat-semua-jurusan.html" class="btn-get-started">Lihat Jurusan</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Tombol Panah Kiri/Kanan -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- Section Informasi Umum -->
+    <section id="info-ppdb" class="section">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <!-- Kolom Kiri: Syarat & Jadwal -->
+          <div class="col-lg-6">
+            <div class="info-box">
+              <h3><i class="bi bi-clipboard-check me-2"></i> Syarat Pendaftaran</h3>
+              <p>Calon peserta didik baru wajib mempersiapkan dokumen berikut:</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Mengisi Formulir
+                  Pendaftaran</li>
+                <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Fotokopi Ijazah /
+                  SKL (Legalisir)</li>
+                <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Fotokopi Kartu
+                  Keluarga (KK)</li>
+                <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Fotokopi Akta
+                  Kelahiran</li>
+                <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Pas Foto 3x4 (4
+                  Lembar)</li>
+                <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Usia Maksimal 21
+                  Tahun</li>
+              </ul>
+
+              <h3 class="mt-4"><i class="bi bi-calendar-event me-2"></i> Jadwal Gelombang</h3>
+              <table class="table table-bordered mt-2">
+                <thead>
+                  <tr>
+                    <th>Gelombang</th>
+                    <th>Waktu</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Gelombang 1</td>
+                    <td>Januari - Maret</td>
+                    <td><span class="badge bg-success">Dibuka</span></td>
+                  </tr>
+                  <tr>
+                    <td>Gelombang 2</td>
+                    <td>April - Juni</td>
+                    <td><span class="badge bg-secondary">Belum Dibuka</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Kolom Kanan: Rincian Biaya -->
+          <div class="col-lg-6">
+            <div class="info-box">
+              <h3><i class="bi bi-cash-coin me-2"></i> Rincian Biaya Masuk</h3>
+              <p>Berikut adalah estimasi biaya pendidikan untuk tahun ajaran baru. Biaya ini <strong>dapat
+                  diangsur</strong> selama semester 1.</p>
+
+              <table class="biaya-table">
+                <thead>
+                  <tr>
+                    <th>Komponen Biaya</th>
+                    <th class="text-end">Nominal (Rp)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Uang Gedung (Dana Pengembangan)</td>
+                    <td class="text-end">1.500.000</td>
+                  </tr>
+                  <tr>
+                    <td>Seragam (4 Stel + Atribut)</td>
+                    <td class="text-end">850.000</td>
+                  </tr>
+                  <tr>
+                    <td>SPP Bulan Juli (Awal)</td>
+                    <td class="text-end">150.000</td>
+                  </tr>
+                  <tr>
+                    <td>Kegiatan MPLS</td>
+                    <td class="text-end">100.000</td>
+                  </tr>
+                  <tr class="total-row">
+                    <td>TOTAL ESTIMASI</td>
+                    <td class="text-end">Rp 2.600.000</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="alert alert-info mt-3">
+                <i class="bi bi-info-circle-fill"></i> <strong>Catatan:</strong>
+                <small>Biaya di atas belum termasuk biaya praktik jurusan tertentu. Untuk siswa berprestasi atau
+                  pemegang KIP, tersedia potongan biaya khusus.</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Call to Action (Tombol Lanjut) -->
+        <div class="row mt-5" data-aos="zoom-in">
+          <div class="col-12">
+            <div class="cta-section">
+              <h2 class="text-white mb-3">Sudah Paham Informasinya?</h2>
+              <p class="text-white mb-4">Jika Anda sudah memahami persyaratan dan biaya di atas, silakan lanjutkan ke
+                proses pengisian formulir pendaftaran.</p>
+
+              <!-- Link ini mengarah ke file form-ppdb.html yang akan kita buat nanti -->
+              <a href="form-ppdb.html" class="btn btn-light btn-lg rounded-pill px-5 fw-bold text-primary">
+                Lanjut ke Formulir Pendaftaran <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+        <!-- KOLOM 1: IDENTITAS SEKOLAH -->
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">PixxelPro</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Jl. Pendidikan No. 123</p>
+            <p>Kota Harapan, Indonesia 40123</p>
+            <p class="mt-3"><strong>WhatsApp:</strong> <span>+62 895 6390 68080</span></p>
+            <p><strong>Email:</strong> <span>info@pixxelpro.sch.id</span></p>
+          </div>
+        </div>
+
+        <!-- KOLOM 2: TAUTAN CEPAT -->
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Tautan Cepat</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="guru-lengkap.html">Guru & Staf</a></li>
+            <li><a href="ppdb.html">Info PPDB</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+          </ul>
+        </div>
+
+        <!-- KOLOM 3: JURUSAN POPULER -->
+        <div class="col-lg-4 col-md-6 footer-links">
+          <h4>Jurusan Unggulan</h4>
+          <ul>
+            <li><a href="jurusan-rpl.html">Rekayasa Perangkat Lunak (RPL)</a></li>
+            <li><a href="jurusan-tkj.html">Teknik Komputer Jaringan (TKJ)</a></li>
+            <li><a href="jurusan-dkv.html">Desain Komunikasi Visual (DKV)</a></li>
+            <li><a href="jurusan-tkr.html">Teknik Kendaraan Ringan (TKR)</a></li>
+            <li><a href="lihat-semua-jurusan.html">Lihat Semua Jurusan...</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">PixxelPro</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- Tetap biarkan credit ini jika menggunakan versi gratis BootstrapMade -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
