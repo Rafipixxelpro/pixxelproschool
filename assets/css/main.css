@@ -5043,3 +5043,95 @@ section,
   color: var(--contrast-color);
   transform: translateY(-2px);
 }
+
+/* Style Kartu Kurikulum */
+.curriculum-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Bayangan halus */
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 100%; /* Agar tinggi sama jika ada kartu lain */
+    border: 1px solid #f0f0f0;
+}
+
+.curriculum-card:hover {
+    transform: translateY(-5px); /* Efek naik saat disentuh */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* Style Ikon */
+.icon-wrapper {
+    color: #F25C24; /* Warna Orange */
+    margin-bottom: 20px;
+}
+
+.icon-wrapper svg {
+    width: 60px;  /* Ukuran Ikon */
+    height: 60px;
+}
+
+/* Style Judul */
+.curriculum-card h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Style Deskripsi */
+.curriculum-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* --- Style Kartu --- */
+.learning-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.learning-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Style Ikon Wrapper --- */
+.icon-wrapper {
+    margin-bottom: 25px;
+    color: #F25C24; /* Warna Orange */
+}
+
+/* --- KHUSUS FONT AWESOME --- */
+.icon-wrapper i {
+    font-size: 60px; /* Ukuran ikon diperbesar */
+    line-height: 1;
+}
+
+/* --- Teks --- */
+.learning-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.learning-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
